@@ -1,0 +1,450 @@
+{
+    "schema": {
+    "label": "Form Title",
+    "id": "formname-form",
+    "amount" : "Beitrag $0.0",
+    "children": [
+        {
+            "label": "First Form Container",
+            "id": "first-container",
+            "submitText": "Next",
+            "children": [
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "firstRadioBar",
+                    "props": {
+                        "label": "",
+                        "items" :[
+                           {"label":"one","value": 1}, 
+                           {"label":"two","value": 2} 
+                        ],
+                        "text1" : "line one",
+                        "text2" : "line two"
+                    },
+                    "component": "RadioBar"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "formHeader1",
+                    "props": {
+                        "label": "Form Header One",
+                        "count" : 1
+                    },
+                    "component": "FormHeader"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "checkboxGroup",
+                    "props": {
+                        "label": "",
+                        "items": [
+                            {"label":"sie","value": 1}, 
+                            {"label":"partner","value": 2}, 
+                            {"label":"andere","value": 2} 
+                        ]
+                    },
+                    "component": "CheckBox"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "radioBoxOne",
+                    "props": {
+                        "label": "Kundengrppe",
+                        "items": [
+                            {"label":"radio1","value": 1}, 
+                            {"label":"radio2","value": 2}, 
+                            {"label":"radio3","value": 2} 
+                        ]
+                    },
+                    "component": "RadioButton"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "gender",
+                    "props": {
+                        "label": "Gender",
+                        "validations": [
+                            {
+                                "message": "Gender is required",
+                                "name": "required"
+                            }
+                        ]
+                    },
+                    "component": "Radio"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "dob",
+                    "props": {
+                        "label": "Date of Birth",
+                        "placeholder": "Enter your DoB",
+                        "validations": [
+                            {
+                                "message": "DoB is required",
+                                "name": "required"
+                            }
+                        ]
+                    },
+                    "component": "DatePicker"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "maritalStatus",
+                    "props": {
+                        "label": "Marital Status",
+                        "validations": [
+                            {
+                                "message": "Marital Status is required",
+                                "name": "required"
+                            }
+                        ],
+                        "items": [
+                            {
+                                "label": "Married",
+                                "value": "M"
+                            },
+                            {
+                                "label": "Unmarried",
+                                "value": "U"
+                            },
+                            {
+                                "label": "Others",
+                                "value": "O"
+                            }
+                        ]
+                    },
+                    "component": "Radio"
+                },
+                {
+                    "props": {
+                        "label": "Nominee Details"
+                    },
+                    "children": [
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "nomineeName",
+                            "props": {
+                                "label": "Nominee Name",
+                                "placeholder": "Enter nominee name",
+                                "validations": [
+                                    {
+                                        "message": "Nominee name is required",
+                                        "name": "required"
+                                    }
+                                ]
+                            },
+                            "component": "TextInput"
+                        },
+                        {
+                            "maximum": 90,
+                            "minimum": 18,
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "nomineeAge",
+                            "props": {
+                                "label": "Nominee Age",
+                                "placeholder": "Enter nominee age",
+                                "validations": [
+                                    {
+                                        "message": "Nominee age is required",
+                                        "name": "required"
+                                    }
+                                ],
+                                "inputType": "number"
+                            },
+                            "component": "TextInput"
+                        },
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "nomineeRelationship",
+                            "props": {
+                                "label": "Nominee Relationship",
+                                "validations": [
+                                    {
+                                        "message": "Nominee relationship is required",
+                                        "name": "required"
+                                    }
+                                ],
+                                "items": [
+                                    {
+                                        "label": "Brother",
+                                        "value": "Brother"
+                                    },
+                                    {
+                                        "label": "Father",
+                                        "value": "Father"
+                                    },
+                                    {
+                                        "label": "Mother",
+                                        "value": "Mother"
+                                    },
+                                    {
+                                        "label": "Wife",
+                                        "value": "Wife"
+                                    },
+                                    {
+                                        "label": "Husband",
+                                        "value": "Husband"
+                                    }
+                                ]
+                            },
+                            "component": "Dropdown"
+                        }
+                    ],
+                    "label": "Nominee Details",
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "nominee",
+                    "component": "SubContainer"
+                },
+                {
+                    "props": {
+                        "label": "address"
+                    },
+                    "children": [
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "addressLineOne",
+                            "props": {
+                                "label": "Address line 1",
+                                "placeholder": "Enter address line 1",
+                                "validations": [
+                                    {
+                                        "message": "Address is required",
+                                        "name": "required"
+                                    }
+                                ]
+                            },
+                            "component": "TextInput"
+                        },
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "addressLineTwo",
+                            "props": {
+                                "label": "Address line 2",
+                                "placeholder": "Enter address line 2"
+                            },
+                            "component": "TextInput"
+                        },
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "addressPincode",
+                            "props": {
+                                "label": "Pincode",
+                                "placeholder": "Enter pincode",
+                                "validations": [
+                                    {
+                                        "message": "Pincode is required",
+                                        "name": "required"
+                                    }
+                                ],
+                                "inputType": "number"
+                            },
+                            "component": "TextInput",
+                            "minimum": 100000,
+                            "maximum": 999999
+                        },
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "addressInsurerCityId",
+                            "props": {
+                                "label": "City",
+                                "placeholder": "Enter City",
+                                "validations": [
+                                    {
+                                        "message": "City is required",
+                                        "name": "required"
+                                    }
+                                ],
+                                "items": []
+                            },
+                            "component": "Dropdown"
+                        },
+                        {
+                            "isHidden": false,
+                            "isDisabled": false,
+                            "id": "addressInsurerStateId",
+                            "props": {
+                                "label": "State",
+                                "placeholder": "Enter state",
+                                "validations": [
+                                    {
+                                        "message": "State is required",
+                                        "name": "required"
+                                    }
+                                ],
+                                "items": [
+                                    {
+                                        "label": "True",
+                                        "value": "true"
+                                    }
+                                ],
+                                "optionsApiUrl": "asdasdasd"
+                            },
+                            "component": "Dropdown"
+                        }
+                    ],
+                    "label": "Address",
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "address",
+                    "component": "SubContainer"
+                }
+            ],
+            "component": "Container",
+            "isHidden": false,
+            "isSubmitted": false,
+            "isActive": false
+        },
+        {
+            "label": "Vehicle Details",
+            "id": "vehicle-details",
+            "submitText": "Next: Address Details",
+            "children": [
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "registrationNumber",
+                    "props": {
+                        "label": "Registration Number",
+                        "placeholder": "Enter your vehicle's registration Number",
+                        "validations": [
+                            {
+                                "message": "Registration Number required",
+                                "name": "required"
+                            },
+                            {
+                                "name": "regex",
+                                "message": "Invalid registration number",
+                                "regex": "[A-Z]{2}",
+                                "backendRegex": "[A-Z]{2}"
+                            }
+                        ]
+                    },
+                    "component": "TextInput"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "engineNumber",
+                    "props": {
+                        "label": "Engine Number",
+                        "placeholder": "Enter your vehicle's engine Number",
+                        "validations": [
+                            {
+                                "message": "Engine Number required",
+                                "name": "required"
+                            },
+                            {
+                                "name": "regex",
+                                "message": "Invalid engine number",
+                                "regex": "[A-Za-z0-9]{2,}",
+                                "backendRegex": "[A-Za-z0-9]{2,}"
+                            }
+                        ]
+                    },
+                    "component": "TextInput"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "chassisNumber",
+                    "props": {
+                        "label": "Chassis Number",
+                        "placeholder": "Enter your vehicle's chassis Number",
+                        "validations": [
+                            {
+                                "message": "Chassis Number required",
+                                "name": "required"
+                            },
+                            {
+                                "name": "regex",
+                                "message": "Invalid chassis number",
+                                "regex": "[A-Za-z0-9]{2,}",
+                                "backendRegex": "[A-Za-z0-9]{2,}"
+                            }
+                        ]
+                    },
+                    "component": "TextInput"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "isVehicleOnLoan",
+                    "props": {
+                        "label": "Is car on loan?",
+                        "validations": [
+                            {
+                                "message": "Car on loan field is required",
+                                "name": "required"
+                            }
+                        ]
+                    },
+                    "component": "CheckBox"
+                },
+                {
+                    "cachingService": {},
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "insurerLoanProviderId",
+                    "props": {
+                        "label": "Vehicle Financier",
+                        "placeholder": "Vehicle Financier"
+                    },
+                    "component": "Dropdown"
+                },
+                {
+                    "cachingService": {},
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "insurerPreviousPolicyInsurerId",
+                    "props": {
+                        "label": "Previous Policy Insurer",
+                        "placeholder": "Previous Policy Insurer",
+                        "validations": [
+                            {
+                                "message": "Previous policy insurer is required",
+                                "name": "required"
+                            }
+                        ]
+                    },
+                    "component": "Dropdown"
+                },
+                {
+                    "isHidden": false,
+                    "isDisabled": false,
+                    "id": "insurerPreviousPolicyNumber",
+                    "props": {
+                        "label": "Previous Policy Number",
+                        "placeholder": "Enter your vehicle's previous policy number",
+                        "validations": [
+                            {
+                                "message": "Previous policy number is required",
+                                "name": "required"
+                            }
+                        ]
+                    },
+                    "component": "TextInput"
+                }
+            ],
+            "component": "Container",
+            "isHidden": false,
+            "isSubmitted": false,
+            "isActive": false
+        }
+    ]
+}
+}
